@@ -1,28 +1,25 @@
+
+
 header {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    
-}
-
-.header__ttl {
-    width: 100%;
 }
 
 .header__img img {
-    width: 150px;
+    width: 160px;
     height: 40px;
-    margin: 20px auto;
+    margin: 20px 10px;
 }
 
 .header__list {
     display: flex;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px 10px auto 20px ;
 }
 
 .header__item {
-    margin-right: 30px;
+    margin-left: 30px;
     color: #8D8A8A;
 }
 
@@ -34,24 +31,27 @@ header {
     text-decoration: none;
 }
 
-
-
 .inner {
+    width: 100%;
     position: relative;
+}
+.inner__img{
+    width: 60%;
+    margin: 0 0 0 auto;
+
+}
+
+.inner__img img {
     width: 100%;
 }
 
 .inner__text {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 20%;
-    font-size: 50px;
-}
 
-.inner__img {
-    margin: 30px 0 100px auto;
-    display: block;
-    width: 60%;
+    font-size: 50px;
+   
 }
 
 .inner__ttl {
@@ -84,7 +84,6 @@ header {
 
 .news__ttl {
     margin-left: 20%;
-    width: 100%;
 }
 
 .news__ttl-en {
@@ -126,15 +125,14 @@ header {
     border-radius: 30px;
     padding: 5px 25px;
     margin: 0 10px;
+    
 }
 
 .about {
     background-color: #f4f4f4;
     padding: 50px 0;
 }
-.about__ttl {
-    margin-left: 20%;
-}
+
 
 .about__ttl-en {
     font-family: "Indie Flower", cursive;
@@ -177,7 +175,6 @@ header {
 
 .service__ttl {
     margin-left: 20%;
-    width: 100%;
 }
 
 .service__ttl-en {
@@ -289,7 +286,6 @@ header {
 
 .blog__ttl {
     margin-left: 20%;
-    width: 100%;
 }
 
 .blog__ttl-en {
@@ -373,7 +369,6 @@ header {
 
 .company__ttl {
     margin-left: 20%;
-    width: 100%;
 }
 
 .company__ttl-en {
@@ -425,7 +420,6 @@ table td {
     font-size: 35px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
     text-align: center;
 
 }
@@ -443,11 +437,15 @@ table td {
 .category__content-interview {
     background: url("../img/interview.png");
     background-repeat: no-repeat;
-    width: 50%;
+    width: 60%;
     padding: 130px 0;
     color: white;
     text-decoration: none;
     display: inline-block;
+}
+
+.contact {
+    padding: 50px;
 }
 
 .contact__top {
@@ -456,8 +454,46 @@ table td {
 }
 
 .contact__bar {
-    color: #DB086B;
-    border: 1px solid ;
-    width: 1px;
+    background-color: #DB086B;
+    width: 3px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.contact__btn {
+    color: white;
+    width: 10%;
+    background: linear-gradient(90deg,#f9318e,#aa0e57);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 7px #811044;
+    padding: 20px 40px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+}
+
+.contact__btn::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url("../img/mailicon.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
     height: 30px;
+}
+
+footer {
+    background-color: #DEDEDE;
+    padding: 20px 0;
+}
+
+small {
+    color: #8D8A8A;
+    display: block;
+    text-align: center;
+
 }
