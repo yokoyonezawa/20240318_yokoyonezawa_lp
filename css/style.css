@@ -71,7 +71,10 @@ header {
         width: 50%;
         margin: 0 0 0 auto;
     }
+}
 
+
+@media screen and (min-width: 1025px) {
         .inner__img img {
             width: 60%;
         }
@@ -87,7 +90,7 @@ header {
     top: 25%;
     left: 20%;
     font-size: 50px;
-}
+    }
 
 
 @media screen and (max-width: 768px) {
@@ -98,7 +101,12 @@ header {
     }
 
 @media screen and (min-width: 1025px) {
-    
+        .inner__text {
+            position: absolute;
+            left: 5%;
+            top: 25%;
+           
+    }
 }
 
 
@@ -118,7 +126,7 @@ header {
 
 @media screen and (min-width: 1441px) {
     .inner__ttl {
-        font-size: 150px;
+        font-size: 100px;
     }
 }
 
@@ -136,7 +144,7 @@ header {
 
 @media screen and (min-width: 1441px) {
     .inner__ttl-jp {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
@@ -635,7 +643,7 @@ table td {
 .category__content-interview {
     background: url("../img/interview.png");
     background-repeat: no-repeat;
-    width: 60%;
+    width: 50%;
     padding: 130px 0;
     color: white;
     text-decoration: none;
